@@ -1,27 +1,29 @@
-# Higher or Lower Game - README
+Higher or Lower Game - README
 
-## Overview
-This Python project is a "Higher or Lower" game where players guess which of two Instagram accounts has more followers. The game uses a dataset of Instagram accounts and their follower counts to randomly generate comparisons.
+Overview
 
-## Requirements
-- **Python 3.x**
-- **Pandas** library (`pip install pandas`)
-- **CSV file**: `instagram_global_top_1000.csv` with columns: `Rank`, `Account`, `Title`, and `Followers`.
+This Python project is a "Higher or Lower" game where players guess which of two Instagram accounts has more followers.
+The game uses a dataset of Instagram accounts and their follower counts to randomly generate comparisons.
 
-## How to Play
-1. **Start**: The game selects two random Instagram accounts.
-2. **Guess**: Type '1' or '2' to guess which account has more followers.
-3. **Score**: Correct guesses increase your score. The game continues with the winner of the previous round.
-4. **End**: The game ends when a guess is wrong. Option to reset and play again.
+Requirements
+- Python 3.x
+- Pandas library (`pip install pandas`)
+- CSV file: `instagram_global_top_1000.csv` with columns: `Rank`, `Account`, `Title`, and `Followers`.
 
-## Key Functionality
-- **Random Account Selection**: The game picks two different Instagram accounts for comparison.
-- **User Input Validation**: The game ensures the user provides valid input ('1' or '2').
-- **Dynamic Rounds**: After each correct guess, the higher-follower account is reused in the next round.
-- **Score Tracking**: The game keeps track of your score throughout a session.
-- **Game Reset**: After each game, the user can choose to start a new game or quit.
+How to Play
+1. Start: The game selects two random Instagram accounts.
+2. Guess: Type '1' or '2' to guess which account has more followers.
+3. Score: Correct guesses increase your score. The game continues with the winner of the previous round.
+4. End: The game ends when a guess is wrong. Option to reset and play again.
 
-## Running the Game
+Key Functionality
+- Random Account Selection: The game picks two different Instagram accounts for comparison.
+- User Input Validation: The game ensures the user provides valid input ('1' or '2').
+- Dynamic Rounds: After each correct guess, the higher-follower account is reused in the next round.
+- Score Tracking: The game keeps track of your score throughout a session.
+- Game Reset: After each game, the user can choose to start a new game or quit.
+
+Running the Game
 1. Install dependencies: `pip install pandas`
 2. Ensure the CSV file is correctly placed.
 3. Run the script: `python <script_name>.py`
