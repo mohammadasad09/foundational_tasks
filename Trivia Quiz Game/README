@@ -1,0 +1,48 @@
+True/False Quiz Game - README
+Overview
+
+This Python project is a simple True/False quiz game where users answer a series of randomly selected questions from a predefined dataset. 
+The game tracks the player's score and continues until all selected questions have been answered.
+
+Features
+
+Object-Oriented Design: The game is built using Object-Oriented Programming (OOP) principles for better structure and scalability.
+Customizable Quiz Length: Players can choose how many questions they want to attempt (between 1 and 50).
+Score Tracking: The game keeps track of the player's correct answers and displays the final score at the end.
+Question Validation: Ensures the player provides valid answers (either 'True' or 'False').
+
+Requirements
+Python 3.x: Ensure you have a modern Python version installed.
+No additional libraries or installations are required.
+
+Files
+quiz_brain.py: Contains the core logic for running the quiz, including question iteration, validation, and score tracking.
+question.py: Defines the Question class, which holds the question text and correct answer for each question.
+data.py: Holds the dataset of questions and their corresponding answers in a dictionary format.
+main.py: The main file that handles user input, sets up the quiz, and starts the game.
+
+Classes and Methods
+
+1. QuizBrain Class:
+Attributes:
+question_number: Tracks the current question number.
+score: Tracks the player's score.
+questions_list: Stores the list of Question objects for the quiz.
+Methods:
+next_question(): Displays the next question, validates the user's input, and checks if the answer is correct.
+still_has_questions(): Returns True if there are more questions to answer.
+check_answer(): Compares the user's answer with the correct answer and adjusts the score.
+
+2. Question Class:
+Attributes:
+text: Stores the question text.
+answer: Stores the correct answer (True or False).
+
+
+How to Play
+
+Select Number of Questions: The game asks how many questions you'd like to attempt (between 1 and 50).
+Answer Questions: For each question, type either 'True' or 'False'. If an invalid input is provided, the game will prompt you to re-enter a valid response.
+Scoring: The game keeps track of your score as you progress. Correct answers increase your score, and feedback is provided after each answer.
+Game End: Once all questions are answered, the game displays your final score.
+Running the Game: Ensure all files (main.py, quiz_brain.py, data.py, question.py) are in the same directory.
