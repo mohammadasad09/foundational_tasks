@@ -1,0 +1,36 @@
+SNAKE GAME - TURTLE GRAPHICS IMPLEMENTATION (OOP)
+
+Overview
+
+* This project showcases an Object-Oriented Python implementation of the classic Snake Game, built using the Turtle graphics module.
+* It demonstrates key OOP concepts like encapsulation, inheritance, and modular design by structuring the code into multiple classes across four files. 
+* The game is dynamic, interactive, and offers smooth gameplay, making it both a fun experience and a practical demonstration of OOP principles in Python.
+
+Game Features
+Object-Oriented Architecture: The game is structured across multiple classes:
+  Snake: Handles the snake's movement, growth, and collision detection.
+  Food: Manages the food's random spawning.
+  Scoreboard: Tracks and displays the player's score, with updates in real-time. 
+Each class is modular and reusable, allowing for efficient game updates and feature expansions.
+
+Dynamic Gameplay
+  The snake moves in real-time, reacting instantly to keyboard inputs (arrow keys). 
+  Every time the snake consumes food, its length increases, raising the difficulty and the score.
+
+Smooth Graphics and Animation
+  Built using Python's Turtle graphics, the game runs smoothly at controlled frame rates, giving a responsive and polished experience.
+
+Replay Feature: 
+  Upon game over, the player is prompted to restart without needing to exit or relaunch the game.
+  Input validation ensures smooth user interaction when choosing to replay.
+
+How to Play
+  Controls: Use the arrow keys to navigate the snake:
+    Up Arrow: Move the snake upward.
+    Down Arrow: Move the snake downward.
+    Left Arrow: Turn the snake left.
+    Right Arrow: Turn the snake right.
+
+  Objective: Eat the food to grow the snake and increase your score. Avoid colliding with walls or your own body!
+
+  Replay: If you hit a wall or the snake collides with itself, the game ends. You will be prompted to either replay or exit.
