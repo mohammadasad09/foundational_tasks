@@ -38,10 +38,8 @@ while replay_game == 'yes':
         if snake.head.xcor()> 300 or snake.head.xcor() < -300 or snake.head.ycor() > 300 or snake.head.ycor() < -300:
             game_is_on = False 
         
-        for segment in snake.segments:
-            if segment == snake.head:
-                pass
-            elif snake.head.distance(segment) < 10:
+        for segment in snake.segments[1:]:
+            if snake.head.distance(segment) < 10:
                 game_is_on = False
                 
     replay_game = screen.textinput("Replay the game", f"Game over! Your final score is {score.counter}\nWould you like to replay the game? Enter 'yes' or 'no': ").lower()
