@@ -1,0 +1,29 @@
+Pong Game - README
+
+Overview
+This Pong Game is a Python-based recreation of the classic Pong arcade game, implemented using Object-Oriented Programming (OOP) principles. The game delivers smooth gameplay with real-time user interaction, featuring two paddles controlled by the players and a ball that bounces across the screen. The primary goal is to score by making the ball pass the opponent's paddle. It leverages the Turtle Graphics module to handle the game's visuals and user input.
+
+Key Features
+Object-Oriented Design: The game is built using multiple classes (Paddle, Ball, Scoreboard) to encapsulate functionality, ensuring modularity and easy expansion. Each component is independent, making it simpler to modify or extend the game mechanics in future iterations.
+
+Interactive Controls:
+  Left Paddle: Controlled by player one using the 'A' and 'S' keys.
+  Right Paddle: Controlled by player two using the 'Up' and 'Down' arrow keys.
+
+Dynamic Ball Movement: The ball moves smoothly across the screen and bounces off walls and paddles based on collision detection. The ball speed dynamically adjusts, making the game more challenging as it progresses.
+
+Score Tracking: A Scoreboard tracks and displays points for both players. When a player scores, the ball is reset to the center, and the score is updated accordingly.
+
+Collision Detection: The game detects when the ball collides with the paddles or the screen boundaries, ensuring realistic physics-like interactions.
+
+Customizable Gameplay: The game's speed and other variables can be easily adjusted, allowing users to tweak gameplay difficulty.
+How to Play
+Start the Game: Once you run the program, the Pong Game window will appear.
+Player 1 (Left Paddle):
+  Press 'A' to move the paddle up.
+  Press 'S' to move the paddle down.
+Player 2 (Right Paddle):
+  Press the 'Up' arrow to move the paddle up.
+  Press the 'Down' arrow to move the paddle down.
+  
+Scoring: The game continues until one player scores by sending the ball past the opponent's paddle.
