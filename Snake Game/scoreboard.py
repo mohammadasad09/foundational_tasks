@@ -1,4 +1,9 @@
-from turtle import Turtle, Screen
+from turtle import Turtle
+from high_score_manager import HighScoreManager
+
+
+score_manager = HighScoreManager('Snake Game/high_score.txt')
+maximum_score = score_manager.get_max_score()
 
 
 class Scoreboard(Turtle):
@@ -6,6 +11,7 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.counter = 0
+        self.high_score = score_manager.get_max_score()
         self.color("white")
         self.penup()
         self.goto(0,270)
@@ -13,13 +19,9 @@ class Scoreboard(Turtle):
         self.update_scoreboard()
     
     def update_scoreboard(self):
-        self.write(f"Score = {self.counter} ", move= False, align = "center", font=('Courier', 24, 'normal'))
+        self.clear()
+        self.write(f"Score = {self.counter} High Score: {self.high_score}", move= False, align = "center", font=('Courier', 24, 'normal'))
     
     def increase_score(self):    
         self.counter += 1
-        self.clear()
         self.update_scoreboard()
-
-    def game_over(self):
-        self.goto(0,0)
-        self.write(f"Thanks for playing!", move= False, align = "center", font=('Courier', 24, 'normal'))
